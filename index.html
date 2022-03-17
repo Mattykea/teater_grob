@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Landingpage</title>
   </head>
@@ -48,12 +54,45 @@
     </main>
 
     <footer>
-      <div class="kontakt"></div>
+      <div class="kontakt">
+        <h4>KONTAKT</h4>
+        <address>
+          Teater Grob <br />Nørrebrogade 37 <br />2200 København N
+        </address>
+        <div>Telefon: <a href="tel:+45 35 30 05 00">35 30 05 00</a></div>
+        <div>E-mail: <e-mail>billet@grob.dk</e-mail></div>
+      </div>
 
-      <div class="socials"></div>
+      <div class="socials">
+        <a href="https://www.facebook.com/teatergrob/?ref=page_internal"
+          >FB IKON</a
+        >
+        <a href="https://www.instagram.com/teatergrob/">INSTA IKON</a>
 
-      <div class="nyhedsbrev"></div>
+        <a href="https://www.youtube.com/channel/UCFMJLMumnaC1Y0mURsmPJOw"
+          >YT IKON</a
+        >
+      </div>
+      <div class="nyhedsbrev">
+        <h4>Nyhedsbrev</h4>
+        <div class="mail">
+          <label for="E-mail">
+            <input
+              placeholder="Din e-mail"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="tilmeld">
+          <button class="tilmeld_knap">Tilmeld</button>
+        </div>
+      </div>
     </footer>
+
     <script src="burger.js"></script>
   </body>
 </html>
