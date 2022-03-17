@@ -15,12 +15,15 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html">GROB</a>
+      <div class="navbar">
+        <button class="toggle-btn">☰</button>
+
+        <div class="logo">
+          <a href="index.html">GROB</a>
+        </div>
+
+        <div class="ikoner">ikoner</div>
       </div>
-
-      <button class="toggle-btn">☰</button>
-
       <nav>
         <ul>
           <li><a href="#0">FORESTILLINGER</a></li>
@@ -42,56 +45,53 @@
 
         <div class="aarskort">
           <h2>ÅRSKORT</h2>
-          <img src="billeder/danse.jpg" alt="" />
+          <img src="" alt="" />
           <p></p>
         </div>
 
         <div class="tekst">
-          <img src="" alt="" />
+          <img src="billeder/danse.jpg" alt="" />
           <p></p>
         </div>
       </section>
+      <footer>
+        <div class="kontakt">
+          <h4>KONTAKT</h4>
+          <address>
+            Teater Grob <br />Nørrebrogade 37 <br />2200 København N
+          </address>
+          <div>Telefon: <a href="tel:+45 35 30 05 00">35 30 05 00</a></div>
+          <div>E-mail: <e-mail>billet@grob.dk</e-mail></div>
+        </div>
+
+        <div class="socials">
+          <h4>SOCIALE MEDIER</h4>
+          <a href="https://www.facebook.com/teatergrob/?ref=page_internal"
+            >FB IKON</a
+          >
+          <a href="https://www.instagram.com/teatergrob/">INSTA IKON</a>
+
+          <a href="https://www.youtube.com/channel/UCFMJLMumnaC1Y0mURsmPJOw"
+            >YT IKON</a
+          >
+        </div>
+        <div class="nyhedsbrev">
+          <h4>Nyhedsbrev</h4>
+          <div class="mail">
+            <label for="E-mail">
+              <input
+                placeholder="Din e-mail"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
+            <button class="tilmeld_knap">Tilmeld</button>
+          </div>
+        </div>
+      </footer>
     </main>
-
-    <footer>
-      <div class="kontakt">
-        <h4>KONTAKT</h4>
-        <address>
-          Teater Grob <br />Nørrebrogade 37 <br />2200 København N
-        </address>
-        <div>Telefon: <a href="tel:+45 35 30 05 00">35 30 05 00</a></div>
-        <div>E-mail: <e-mail>billet@grob.dk</e-mail></div>
-      </div>
-
-      <div class="socials">
-        <a href="https://www.facebook.com/teatergrob/?ref=page_internal"
-          >FB IKON</a
-        >
-        <a href="https://www.instagram.com/teatergrob/">INSTA IKON</a>
-
-        <a href="https://www.youtube.com/channel/UCFMJLMumnaC1Y0mURsmPJOw"
-          >YT IKON</a
-        >
-      </div>
-      <div class="nyhedsbrev">
-        <h4>Nyhedsbrev</h4>
-        <div class="mail">
-          <label for="E-mail">
-            <input
-              placeholder="Din e-mail"
-              type="email"
-              name="email"
-              id="email"
-              required
-            />
-          </label>
-        </div>
-
-        <div class="tilmeld">
-          <button class="tilmeld_knap">Tilmeld</button>
-        </div>
-      </div>
-    </footer>
 
     <script src="burger.js"></script>
   </body>
