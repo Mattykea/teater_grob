@@ -1,0 +1,58 @@
+/* GENERELT */
+img {
+  max-width: 100%;
+}
+
+main {
+  margin-inline: 12%;
+}
+
+ul {
+  text-decoration: none;
+}
+
+/* BURGERMENU */
+.toggle-btn {
+  display: none;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+
+header ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+#forside {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/*BURGERMENU */
+@media (max-width: 700px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
