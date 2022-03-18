@@ -99,3 +99,11 @@ input {
     flex-flow: column;
   }
 }
+
+@media (min-width: 700px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 12%;
+  }
+}
