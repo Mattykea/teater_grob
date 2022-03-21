@@ -6,6 +6,11 @@ main img {
   margin-right: 8%;
 }
 
+body {
+  background-image: url(billeder/bg.svg);
+  background-color: rgb(242, 144, 255);
+}
+
 .aarskort img {
   filter: none;
   margin-bottom: 2%;
@@ -132,9 +137,6 @@ footer .socials a {
 }
 
 /* FARVER */
-* {
-  background-color: rgb(250, 226, 93);
-}
 
 footer,
 footer div,
@@ -144,7 +146,7 @@ footer button,
 footer label,
 footer a,
 footer e-mail {
-  background-color: rgb(46, 191, 228);
+  background-color: #ffa530;
   padding-block: 1%;
   padding-left: 5%;
   margin-top: 5%;
@@ -181,6 +183,7 @@ footer input {
     flex-flow: column;
   }
 }
+
 /* RESPONSIVE */
 @media (min-width: 450px) {
   .splash h1 {
@@ -256,6 +259,10 @@ footer input {
   .nyhedsbrev .mail {
     margin: 0%;
   }
+
+  body {
+    background-image: url(billeder/bg2.svg);
+  }
 }
 
 @media (min-width: 1000px) {
@@ -263,6 +270,10 @@ footer input {
     font-size: 12rem;
     padding-left: 30%;
     padding-top: 1%;
+  }
+
+  body {
+    background-image: url(billeder/bg3.svg);
   }
 }
 
@@ -299,7 +310,10 @@ footer input {
 
   .ikoner {
     width: 7%;
-
     margin-bottom: 1%;
+  }
+
+  body {
+    background-image: url(billeder/bg4.svg);
   }
 }
