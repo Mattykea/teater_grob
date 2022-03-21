@@ -182,6 +182,10 @@ footer input {
     display: flex;
     flex-flow: column;
   }
+
+  nav li {
+    padding-top: 4%;
+  }
 }
 
 /* RESPONSIVE */
