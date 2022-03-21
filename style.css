@@ -27,6 +27,22 @@ section {
 
 a {
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.logo a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 2.2rem;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+  padding-left: 10%;
 }
 
 .ikoner {
@@ -109,6 +125,10 @@ header .navbar {
 .ikoner {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.logo a {
+  font-size: 2rem;
 }
 
 .aarskort {
@@ -219,12 +239,14 @@ footer input {
   nav ul {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+
     margin-inline: 13%;
     margin-bottom: 4%;
   }
 
   nav a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   header .navbar div,
@@ -234,7 +256,8 @@ footer input {
   }
 
   .ikoner {
-    width: 10%;
+    width: 9%;
+    height: 5%;
     margin-bottom: 2%;
   }
 
@@ -267,6 +290,10 @@ footer input {
   body {
     background-image: url(billeder/bg2.svg);
   }
+
+  .logo a {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -278,6 +305,10 @@ footer input {
 
   body {
     background-image: url(billeder/bg3.svg);
+  }
+
+  .ikoner {
+    width: 6%;
   }
 }
 
@@ -313,7 +344,7 @@ footer input {
   }
 
   .ikoner {
-    width: 7%;
+    width: 5%;
     margin-bottom: 1%;
   }
 
