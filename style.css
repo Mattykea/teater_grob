@@ -1,15 +1,42 @@
 /* GENERELT */
-img {
+main img {
   max-width: 100%;
   filter: drop-shadow(1rem 1rem 0px #000);
+  margin-bottom: 8%;
+  margin-right: 8%;
 }
 
-main {
+.aarskort img {
+  filter: none;
+  margin-bottom: 2%;
+  margin-right: 0;
+}
+
+* {
+  margin: 0;
+}
+
+section {
   margin-inline: 12%;
 }
 
 a {
   text-decoration: none;
+}
+
+.ikoner {
+  background-image: url(billeder/ikoner-04.svg);
+  aspect-ratio: 2/1;
+  background-size: cover;
+  width: 15%;
+}
+
+.om_os {
+  margin-block: 8%;
+}
+
+.om_os .left_col {
+  margin-bottom: 4%;
 }
 
 /* SKRIFTTYPE */
@@ -24,7 +51,10 @@ h3 {
   font-family: "Monoton", cursive;
 }
 
-p {
+p,
+address,
+div,
+e-mail {
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -48,6 +78,7 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  margin-inline: 3%;
 }
 
 .toggle-btn,
@@ -56,6 +87,12 @@ header .navbar {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.aarskort {
+  margin-top: 5%;
+}
+
+/* NYHEDSBREV */
 
 input {
   padding: 1.8%;
@@ -70,6 +107,33 @@ input {
   background-color: #000;
   color: white;
   border-color: #000;
+}
+
+footer .socials a {
+  display: flex;
+}
+
+/* FARVER */
+* {
+  background-color: rgb(250, 226, 93);
+}
+
+footer,
+footer div,
+footer h4,
+footer address,
+footer button,
+footer label,
+footer a,
+footer e-mail {
+  background-color: rgb(46, 191, 228);
+  padding-block: 1%;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+
+footer input {
+  background-color: rgba(255, 255, 255, 0.89);
 }
 
 /*BURGERMENU */
@@ -99,11 +163,84 @@ input {
     flex-flow: column;
   }
 }
-
+/* RESPONSIVE */
 @media (min-width: 700px) {
+  section {
+    margin-inline: 17%;
+  }
   nav ul {
     display: flex;
     justify-content: space-between;
-    margin-inline: 12%;
+    margin-inline: 13%;
+    margin-bottom: 4%;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  header .navbar div,
+  header .navbar a {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+
+  .ikoner {
+    width: 10%;
+    margin-bottom: 2%;
+  }
+
+  .aarskort {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-inline: 5%;
+  }
+  .om_os {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 5%;
+  }
+
+  footer {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, auto));
+    gap: 2%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .nyhedsbrev .mail {
+    margin: 0%;
+  }
+}
+
+@media (min-width: 1400px) {
+  section {
+    margin-inline: 25%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 17%;
+    margin-bottom: 2%;
+  }
+
+  nav a {
+    font-size: 2.5rem;
+  }
+
+  header .navbar div,
+  header .navbar a {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+
+  .ikoner {
+    width: 7%;
+
+    margin-bottom: 1%;
   }
 }
