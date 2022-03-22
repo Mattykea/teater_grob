@@ -6,6 +6,9 @@ iframe {
 
 body {
   margin-inline: 12%;
+}
+
+.videoer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 5%;
