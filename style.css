@@ -336,6 +336,10 @@ footer input {
   nav a {
     font-size: 2.5rem;
   }
+  nav a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+  }
 
   header .navbar div,
   header .navbar a {
